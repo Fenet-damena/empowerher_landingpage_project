@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Form</title>
     <style>
-        /* General Styling */
         body {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
@@ -16,7 +15,6 @@
             margin: 0;
         }
 
-        /* Form Container */
         .container {
             display: flex;
             justify-content: center;
@@ -29,36 +27,49 @@
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            text-align: left; 
             width: 350px;
         }
 
-        /* Heading */
-        h2 {
-            font-size: 16px;
+        .social-text {
+            font-size: 14px;
             color: #555;
-            margin-bottom: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
-        /* Social Icons */
         .social-icons {
             display: flex;
-            justify-content: center;
-            gap: 15px;
             margin-bottom: 20px;
+            margin-top: 40px
         }
 
-        .social-icons img {
-            width: 32px;
-            height: 32px;
+        .icon-box {
+            width: 80px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
             cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: #fff;
+            margin-right: 20px;
         }
 
-        /* Form Styling */
+        .icon-box:hover {
+            background-color: #f0f0f0;
+        }
+
+        .icon-box img {
+            width: 24px;
+            height: 24px;
+        }
+
         form {
             display: flex;
             flex-direction: column;
-            text-align: left;
         }
 
         label {
@@ -82,23 +93,23 @@
             outline: none;
         }
 
-        /* Password Hint */
         .password-hint {
             font-size: 12px;
             color: #777;
-            margin-top: -10px;
-            margin-bottom: 15px;
+            margin-top: -6px;
+            margin-bottom: 30px;
         }
 
         /* Button */
         button {
-            background-color: #7e22ce;
+            background-color: #2c0bbe;
             color: white;
             border: none;
             padding: 12px;
             font-size: 16px;
             border-radius: 8px;
             cursor: pointer;
+            margin-left: 10px;
         }
 
         button:hover {
@@ -109,11 +120,17 @@
 <body>
     <div class="container">
         <div class="form-box">
-            <h2>or register with</h2>
+            <p class="social-text">or register with</p>
             <div class="social-icons">
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+                <div class="icon-box">
+                    <img src="icon1.png" alt="Google">
+                </div>
+                <div class="icon-box">
+                    <img src="icon3.png" alt="Apple">
+                </div>
+                <div class="icon-box">
+                    <img src="icon2.png" alt="Facebook">
+                </div>
             </div>
             <form>
                 <label for="name">Name*</label>
