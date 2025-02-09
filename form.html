@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Form Container */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .form-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        /* Heading */
+        h2 {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        input:focus {
+            border-color: #7e22ce;
+            outline: none;
+        }
+
+        /* Password Hint */
+        .password-hint {
+            font-size: 12px;
+            color: #777;
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+
+        /* Button */
+        button {
+            background-color: #7e22ce;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6b21a8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>or register with</h2>
+            <div class="social-icons">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+            </div>
+            <form>
+                <label for="name">Name*</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                
+                <label for="password">Password*</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+                <p class="password-hint">Must be of 8 characters</p>
+
+                <button type="submit">Get started</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
