@@ -1,4 +1,4 @@
-# empowerher_landingpage_project# Landing Page & Rating Page Project
+# empowerher LandingPage & Rating Page Project
 
 ## Project Overview
 This repository contains two projects:
