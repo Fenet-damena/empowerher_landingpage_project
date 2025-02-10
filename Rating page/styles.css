@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#logo-container {
+    width: 40px;  
+    height: 39px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: -2px;
+    margin-top: 10px;
+}
+
+#logo {
+    margin-left: 39px;
+    margin-top: 90px;
+    transform: scale(0.31); 
+    margin-left: 0px;
+    margin-top: 14px;
+}
+
+
+
+
+.feedback-container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-card {
+    text-align: center;
+}
+
+.icon img {
+    width: 120px;
+    height: 100px;
+}
+.feedback-container .icon img{
+    margin-bottom: 12px;
+    
+    
+}
+
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: left;
+    padding-left: 10px;
+}
+.thank-you-state {
+    text-align: center;
+}
+
+.thank-you-state h1,
+.thank-you-state p {
+    text-align: center;
+    margin: 10px auto;
+   
+}
+.thank-you-state .app{
+    width: 340px;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    margin: 10px 0 20px;
+    line-height: 1.6;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 31px;
+}
+
+.rating-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.rating {
+    background-color: hsl(216, 12%, 8%);
+    border: 1px solid hsl(213, 19%, 18%);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rating:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.submit-btn {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 170px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px; 
+}
+
+.submit-btn:hover {
+    background-color: hsl(25, 87%, 43%);
+}
+
+.selected-rating {
+    color: hsl(25, 86%, 40%);
+    background-color: hsl(216, 4%, 26%);
+    padding: 3px 7px;
+    border-radius: 26px;
+    font-weight: bold;
+    margin: 10px auto;
+    display: inline-block;
+    border: 1px solid hsl(27, 7%, 26%);
+}
+
